@@ -1,8 +1,11 @@
 import streamlit as st
+import numpy as np
+import pandas as pd
 
-st.header("st.Button")
+st.header("折线图演示")
 
-if st.button("say hello"):
-    st.write("hello")
-else:
-    st.write("say goodbye")
+data=pd.DataFrame(
+    np.random.randn(20,3),
+    columns=["a","b","c"]
+)
+st.line_chat(data)
