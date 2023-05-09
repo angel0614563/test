@@ -8,4 +8,5 @@ data=pd.DataFrame(
     np.random.randn(20,3),
     columns=["a","b","c"]
 )
+st.write(data)
 st.line_chart(data)
